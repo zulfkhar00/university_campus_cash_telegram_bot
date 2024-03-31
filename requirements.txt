@@ -1,0 +1,7 @@
+beautifulsoup4~=4.12
+pyTelegramBotAPI~=4.16
+python-dotenv~=1.0
+requests~=2.28
+requests-toolbelt~=1.0
+soupsieve~=2.5
+telebot==0.0.5
