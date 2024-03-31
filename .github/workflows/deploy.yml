@@ -32,6 +32,6 @@ jobs:
           key: ${{ secrets.KEY }}
           script: |
             cd campus_cash_telegram_bot
-            pip install -r requirements.txt
             openssl aes-256-cbc -d -a -in .env.enc -out .env -k ${{ secrets.ENV_DECODING_PASSPHRASE }}
-            python3 campus_cash.py
+            docker compose down
+            docker compose up -d
